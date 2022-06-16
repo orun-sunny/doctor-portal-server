@@ -13,7 +13,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run (){
     try{
         await client.connect();
-        console.log('database connected successfully')aaaa
+        console.log('database connected successfully')
 
     }
     finally{
@@ -32,6 +32,8 @@ app.use (cors())
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+
+//port
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`)
